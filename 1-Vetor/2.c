@@ -4,8 +4,9 @@ int main()
 {
     float notas[5];
     float nota, mediaGeral;
+    int i;
 
-    for (int i = 0; i < 5; i++)
+    for (i = 0; i < 5; i++)
     {
         do
         {
@@ -16,11 +17,11 @@ int main()
         mediaGeral += notas[i] / 5;
     }
 
-    for (int i = 0; i < 5; i++)
+    for (i = 0; i < 5; i++)
     {
         if (notas[i] >= mediaGeral)
         {
-            printf("\nAlunos acima da media %d", i);
+            printf("\nAlunos acima da media %d", (i + 1));
         }
     }
 
