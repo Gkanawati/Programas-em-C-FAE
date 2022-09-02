@@ -3,7 +3,7 @@
 int main()
 {
 
-  const tamanho = 3;
+  const int tamanho = 10;
 
   int i;
   char nome[tamanho][30];
