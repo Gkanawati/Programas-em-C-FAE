@@ -28,7 +28,7 @@ int main()
   for (i = 0; i < tamanho; i++)
   {
     fflush(stdin);
-    printf("Digite temperatura: ");
+    printf("Digite temperatura de %s:", meses[i]);
     scanf("%d", &temperaturas[i]);
 
     if (temperaturas[i] > maior)
@@ -42,13 +42,6 @@ int main()
       menor = temperaturas[i];
       strcpy(menorTemp, meses[i]);
     }
-  }
-
-  for (i = 0; i < tamanho; i++)
-  {
-    printf("meses: %s - ", meses[i]);
-    printf("Idade: %d \n", temperaturas[i]);
-    printf("\n");
   }
 
   printf("Maior Temp: %s - Temperatura: %d \n", maiorTemp, maior);
