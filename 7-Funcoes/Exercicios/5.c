@@ -11,18 +11,19 @@ int ordena()
   int maior = 0;
   int menor = 1010;
 
-  for (i = 0; i <= tam; i++)
+  for (i = 0; i < tam; i++)
   {
     scanf("%d", &valores[i]);
   }
 
-  for (i = 0; i <= tam; i++)
+  for (i = 0; i < tam; i++)
   {
     if (valores[i] < menor)
     {
       menor = valores[i];
     }
-    else if (valores[i] > maior)
+
+    if (valores[i] > maior)
     {
       maior = valores[i];
     }
